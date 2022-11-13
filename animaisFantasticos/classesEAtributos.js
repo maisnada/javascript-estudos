@@ -56,7 +56,7 @@ imagens.forEach(imagem => {
         console.log(imagem)
 })
 
-const linkExterno = document.querySelector('.menu a[href^=https]');
+const linkExterno = document.querySelector('.menu a[href^="https"]');
 
 console.log(linkExterno)
 
