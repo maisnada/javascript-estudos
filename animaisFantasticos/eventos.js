@@ -38,8 +38,6 @@ function handleKeyboard(event) {
 
     let body = document.querySelector('body');
 
-    console.log(event.key);
-
     if (event.key === 'd') {
 
         body.classList.add('dark');
@@ -52,3 +50,37 @@ function handleKeyboard(event) {
 }
 
 window.addEventListener('keydown', handleKeyboard);
+
+//////
+
+const menu = document.querySelector('.menu');
+
+const links = menu.querySelectorAll('a');
+
+function handleClickMenu(event) {
+
+    let element = event.target;
+
+    if (element instanceof HTMLAnchorElement) {
+
+        event.preventDefault();
+
+        links.forEach(link => link.classList.remove('ativo'));
+
+        element.classList.add('ativo');
+    }
+}
+
+menu.addEventListener('click', handleClickMenu);
+
+document.body.addEventListener('click', (event) => {
+
+    console.log(event.target);
+
+    event.target.remove();
+})
+
+
+
+
+

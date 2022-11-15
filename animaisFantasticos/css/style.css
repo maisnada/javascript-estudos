@@ -28,11 +28,6 @@ body {
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
-.dark {
-  background-color: #222;
-  color: #ccc;
-}
-
 .menu {
   grid-column: 3 / 5;
   margin-top: 2rem;
@@ -190,6 +185,15 @@ body {
   padding: 20px;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
+}
+
+.dark {
+  background-color: #222;
+  color: #ccc;
+}
+
+.ativo {
+  background-color: #ccc;
 }
 
 @media (max-width: 700px) {
