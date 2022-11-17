@@ -12,7 +12,7 @@ console.log(lista.innerText);
 console.log(lista.outerHTML);
 
 
-//TRASVERSING - navegação no DOM
+//TRASVERSING - navegacao no DOM
 
 const listaAnimmais = document.querySelector('.animais-lista');
 
@@ -41,10 +41,10 @@ const ultimoLi = listaAnimmais.querySelector('li:last-child');
 
 console.log(ultimoLi);
 
-//retorna uma NodeList com Element, texto, comentário, quebra de linha, tudo...
+//retorna uma NodeList com Element, texto, comentario, quebra de linha, tudo...
 console.log(listaAnimmais.childNodes);
 
-//retorna Node acima (text - espaço em brenco)
+//retorna Node acima (text - espaco em brenco)
 console.log(listaAnimmais.previousSibling);
 
 const contato = document.querySelector('.contato');
@@ -55,11 +55,32 @@ const animais = document.querySelector('.animais');
 
 //contato.insertBefore(animais, titulo);
 
+//add elemento no final do elem selecionado
 //listaAnimmais.appendChild(titulo);
 
-contato.removeChild(titulo)
+//remove
+//contato.removeChild(titulo)
+
+//para criar novo elemento
+const mapa = document.querySelector('.mapa');
+
+contato.replaceChild(mapa, titulo);
+
+const novoTitulo = document.createElement('h1');
+
+novoTitulo.innerText = 'TÃ­tulo criado ;D';
+
+novoTitulo.classList.add('titulo');
+
+mapa.appendChild(novoTitulo);
 
 
+const h1 = document.querySelector('h1');
 
+const faq = document.querySelector('.faq');
 
+const cloneH1 = h1.cloneNode(true);
 
+cloneH1.classList.add('azul');
+
+faq.appendChild(cloneH1);
