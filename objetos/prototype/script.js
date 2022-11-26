@@ -27,4 +27,5 @@ console.log(animais);
 
 console.log(animais.constructor.name);
 console.log(aluno.constructor.name);
+
 console.log(nome.constructor.name);
