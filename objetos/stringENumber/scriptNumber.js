@@ -3,17 +3,20 @@ console.log(Number.isNaN(5 + 5));
 
 console.log(Number.isInteger(56.2));
 
-console.log(parseFloat('99.50'));
-console.log(Number.parseFloat('66 Reais'));
+console.log(parseFloat("99.50"));
+console.log(Number.parseFloat("66 Reais"));
 
-console.log(Number.parseInt('99.50', 10));
+console.log(Number.parseInt("99.50", 10));
 
-let preco = 2.999
+let preco = 2.999;
 
 console.log(preco.toFixed());
 console.log(preco.toFixed(2));
 
-let valorFormatado = preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+let valorFormatado = preco.toLocaleString("pt-BR", {
+  style: "currency",
+  currency: "BRL",
+});
 
 console.log(valorFormatado);
 
