@@ -90,6 +90,19 @@ console.log(transporte1.join('>'));
 sem parametros é utilizado para clonar array*/
 console.log(transporte1.slice(1, 3));
 
+/////
+
+const fabricantes = ['Ford', 'Fiat', 'VW'];
+
+fabricantes.forEach((fabricante) => {
+
+    console.log(fabricante);
+})
+
+const localidade = fabricantes.map((fabricante) => `${fabricante} - BR`);
+
+console.log(localidade);
+
 
 
 
