@@ -62,7 +62,7 @@ const carros2 = ['Ford', 'Fiat', 'VW', 'Honda'];
 console.log(carros2);
 
 //add item na posição 2 e remove 1
-console.log(carros2.splice(2, 1, 'Fusca'));
+console.log(carros2.splice(2, 1, 'Fusca..'));
 
 console.log(carros2);
 
@@ -102,6 +102,32 @@ fabricantes.forEach((fabricante) => {
 const localidade = fabricantes.map((fabricante) => `${fabricante} - BR`);
 
 console.log(localidade);
+
+const gastos = [10, 20, 30];
+
+let total = gastos.reduce((ac, valor) => {
+
+    return ac + valor
+})
+
+console.log(total);
+
+let total2 = gastos.reduce((ac, valor) => {
+
+    return valor
+}, 100)
+
+console.log(total2);
+
+
+let criaObjeto = gastos.reduce((ac, valor, index) => {
+
+    ac[index] = valor;
+
+    return ac;
+}, [])
+
+console.log(criaObjeto)
 
 
 
