@@ -105,7 +105,6 @@ console.log(blueButton2.element);
 
 ////////////////
 
-
 class Veiculo {
   constructor(rodas) {
     this.rodas = rodas;
